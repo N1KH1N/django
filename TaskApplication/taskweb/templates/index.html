@@ -1,0 +1,9 @@
+{%extends 'base.html'%}
+{%block parent%}
+
+<h1>Welcome User, {{request.user}}</h1>
+    <div class="container">
+        <a href="{%url 'task-add'%}" class="btn btn-info">Add New Task</a>
+        <a href="{%url 'task-list'%}" class="btn btn-warning">View All Tasks</a>
+    </div>
+{%endblock%}
